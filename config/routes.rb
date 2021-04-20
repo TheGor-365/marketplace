@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  resources :projects
+  resources :projects do
+    resources :comments, module: :projects
+  end
 
 end
