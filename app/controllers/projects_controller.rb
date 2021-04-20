@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @projects = Project.all
+    @projects = Project.active
   end
 
   def show
@@ -18,19 +18,20 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(project_params)
-    @project.user_id = current_user.id
+     @project = Project.new(project_params)
+     @project.user_id = current_user.id
 
-    respond_to do |format|
-      if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
-        format.json { render :show, status: :created, location: @project }
-      else
-        format.html { render :new }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+     respond_to do |format|
+       if @project.save
+         ExpireProjectJob.set(wait_until: @project.expires_at).perform_later(@project)
+         format.html { redirect_to @project, notice: 'Project was successfully created.' }
+         format.json { render :show, status: :created, location: @project }
+       else
+         format.html { render :new }
+         format.json { render json: @project.errors, status: :unprocessable_entity }
+       end
+     end
+   end
 
   def update
     respond_to do |format|
