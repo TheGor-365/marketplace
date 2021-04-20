@@ -14,6 +14,8 @@ import '../stylesheets/application'
 window.jQuery = $;
 window.$ = $;
 
+global.toastr = require("toastr")
+
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover()
