@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  
+
   before_action :set_project, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
@@ -58,6 +58,6 @@ class ProjectsController < ApplicationController
     end
 
     def project_params
-      params.require(:project).permit(:title, :donation_goal)
+      params.require(:project).permit(:title, :donation_goal, :description)
     end
 end
