@@ -15,15 +15,17 @@ gem 'pg'
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
+gem 'omniauth', '~> 1.9'
+gem 'omniauth-stripe-connect'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'cancancan'
-gem 'stripe'
 gem 'stripe_event'
 gem 'gmaps4rails'
 gem 'geocoder'
 gem 'sidekiq'
 gem 'image_processing', '~> 1.2'
+gem 'stripe'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
