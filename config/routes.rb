@@ -2,7 +2,7 @@ require 'sidekiq/web'
 
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
   root to: 'projects#index'
 
   authenticate :user, lambda { |u| u.admin? } do
