@@ -280,6 +280,7 @@ DEPENDENCIES
   devise!
   geocoder
   gmaps4rails
+  image_processing (~> 1.2)
   jbuilder (~> 2.7)
   mini_magick
   omniauth-facebook
