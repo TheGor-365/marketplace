@@ -1,51 +1,51 @@
-.btn {
-  @apply font-semibold text-sm py-2 px-4 rounded cursor-pointer no-underline inline-block;
-
-  &.btn-sm {
-    @apply text-xs py-1 px-3;
-  }
-
-  &.btn-lg {
-    @apply text-base py-3 px-4;
-  }
-
-  &.btn-expanded {
-    @apply block w-full text-center;
-  }
-}
-
-.btn-default {
-  @apply bg-blue-600 text-white;
-
-  &:hover,
-  &:focus {
-    @apply bg-blue-500;
-  }
-
-  &.btn-outlined {
-    @apply border border-blue-600 bg-transparent text-blue-600;
-
-    &:hover,
-    &:focus {
-      @apply bg-blue-600 text-white;
-    }
-  }
-}
-
-.btn-white {
-  @apply bg-white text-blue-800;
-
-  &:hover,
-  &focus {
-    @apply bg-gray-300;
-  }
-}
-
-.link {
-  @apply no-underline text-white;
-
-  &:hover,
-  &:focus {
-    @apply text-gray-100;
-  }
-}
+// .btn {
+//   @apply font-semibold text-sm py-2 px-4 rounded cursor-pointer no-underline inline-block;
+//
+//   &.btn-sm {
+//     @apply text-xs py-1 px-3;
+//   }
+//
+//   &.btn-lg {
+//     @apply text-base py-3 px-4;
+//   }
+//
+//   &.btn-expanded {
+//     @apply block w-full text-center;
+//   }
+// }
+//
+// .btn-default {
+//   @apply bg-blue-600 text-white;
+//
+//   &:hover,
+//   &:focus {
+//     @apply bg-blue-500;
+//   }
+//
+//   &.btn-outlined {
+//     @apply border border-blue-600 bg-transparent text-blue-600;
+//
+//     &:hover,
+//     &:focus {
+//       @apply bg-blue-600 text-white;
+//     }
+//   }
+// }
+//
+// .btn-white {
+//   @apply bg-white text-blue-800;
+//
+//   &:hover,
+//   &focus {
+//     @apply bg-gray-300;
+//   }
+// }
+//
+// .link {
+//   @apply no-underline text-white;
+//
+//   &:hover,
+//   &:focus {
+//     @apply text-gray-100;
+//   }
+// }

@@ -7,6 +7,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("trix")
+require("@rails/actiontext")
 
 import 'bootstrap'
 import '../stylesheets/application'
@@ -28,6 +30,3 @@ document.addEventListener("turbolinks:load", () => {
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-
-require("trix")
-require("@rails/actiontext")

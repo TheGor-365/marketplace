@@ -1,25 +1,25 @@
-.input {
-  @apply appearance-none block w-full bg-white text-gray-800 rounded py-3 px-4 leading-tight;
-
-  &.input-with-border {
-    @apply border;
-  }
-}
-
-.input:focus {
-  @apply outline-none bg-white;
-}
-
-.label {
-  @apply block text-white font-bold mb-2;
-}
-
-.select {
-  @apply appearance-none py-3 px-4 pr-8 block w-full bg-white text-gray-800
-   rounded leading-tight border-2 border-transparent;
-  -webkit-appearance: none;
-}
-
-.select:focus {
-  @apply outline-none bg-white;
-}
+// .input {
+//   @apply appearance-none block w-full bg-white text-gray-800 rounded py-3 px-4 leading-tight;
+//
+//   &.input-with-border {
+//     @apply border;
+//   }
+// }
+//
+// .input:focus {
+//   @apply outline-none bg-white;
+// }
+//
+// .label {
+//   @apply block text-white font-bold mb-2;
+// }
+//
+// .select {
+//   @apply appearance-none py-3 px-4 pr-8 block w-full bg-white text-gray-800
+//    rounded leading-tight border-2 border-transparent;
+//   -webkit-appearance: none;
+// }
+//
+// .select:focus {
+//   @apply outline-none bg-white;
+// }
