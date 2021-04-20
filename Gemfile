@@ -22,7 +22,7 @@ gem 'stripe'
 gem 'stripe_event'
 gem 'gmaps4rails'
 gem 'geocoder'
-
+gem 'sidekiq'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
